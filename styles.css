@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+body {
+    padding: 30px 50px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    color: #fff;
+    height: 79px;
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px;
+}
+
+.storied {
+    flex: 0.8;
+    padding-right: 10px;
+}
+
+.storied p {
+    font-size: 20px;
+    color: grey;
+}
+
+.corbis {
+    flex: 0.2;
+}
+
+.corbis-img-container {
+    position: relative;
+    height: 100%;
+    float: right;
+    font-size: 11px;
+}
+
+.corbis img {
+    width: 100%;
+    height: 57%;
+    object-fit: contain;
+}
+
+.corbis a {
+    color: blue;
+    text-decoration: none;
+    position: relative;
+    top: -18px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-head-img {
+    margin: 0 auto;
+}
+
+.content-head-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-container {
+    width: 100%;
+    height: 615px;
+    margin-bottom: 30px;
+}
+
+.img-container p {
+    color: gray;
+    float: right;
+    font-size: 10px;
+}
+
+.content h1 {
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.stories {
+    display: flex;
+    color: #fff;
+    margin: 0 auto;
+    max-width: 700px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid gray;
+}
+
+.stories img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-right: 10px;
+    filter: grayscale(1);
+}
+
+.description-box {
+    flex: 0.5;
+    color: gray;
+}
+
+.description-box h2 {
+    padding-bottom: 15px;
+    color: #fff;
+}
+
+.stories strong {
+    color: blue;
+    cursor: pointer;
+}
+
+.play-icon {
+    position: relative;
+    top: -141px;
+    left: 164px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    filter: opacity(0.4);
+}
+
+.stories-img-container {
+    flex: 0.5;
+    width: 270px;
+}
+
+.stories-img-container p {
+    font-size: 10px;
+}
+
+.stories-img-container strong {
+    text-transform: uppercase;
+    color: blue;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    position: relative;
+    left: 39px;
+    color: gray;
+}
+
+.footer-img {
+    width: 100px;
+    height: 80px;
+}
+
+.footer-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+footer p {
+    width: 50%;
+}
+
+footer strong {
+    color: blue;
+}
+
+.description-box p {
+    width: 100%;
+}
+
+@media screen and (max-width: 848px) {
+   footer {
+       left: 0px;
+   }
+}
+
+@media screen and (max-width: 650px) {
+    .img-container {
+        height: 352px;
+    }
+    .content h1 {
+        font-size: 25px;
+    }
+    .stories {
+        flex-direction: column;
+    }
+    .stories-img-container {
+        width: auto;
+        padding-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 527px){
+    header {
+        height: 114px;
+    }
+    
+}
